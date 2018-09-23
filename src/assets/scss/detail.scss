@@ -1,0 +1,260 @@
+@import "./_mixin.scss";
+.detail {
+  padding-bottom: 88px + $offset;
+  .menu {
+    font-size: 2em;
+  }
+  .main-pic {
+    width: 100%;
+    height: 578px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .info {
+    padding: $offset;
+    background: #fff;
+    &-up {
+      display: flex;
+      justify-content: space-between;
+      .name {
+        font-size: fontSize(26);
+      }
+      .monthScal {
+        font-size: fontSize(20);
+        color: fontColor(gray);
+      }
+    }
+    .desc {
+      color: fontColor(gray);
+      margin: $offset 0;
+      line-height: 30px;
+    }
+    .price-wrap {
+      margin-bottom: 2 * $offset;
+      .price {
+        color: color(orange);
+        font-size: fontSize(30);
+        margin-right: 17px;
+      }
+      .old-price {
+        font-size: fontSize(20);
+        color: fontColor(gray);
+        text-decoration: line-through;
+      }
+    }
+    .rt-sup {
+      color: rgba($color: color(orange), $alpha: .7);
+      span {
+        margin-right: 58px;
+      }
+    }
+    .coupon {
+      font-size: fontSize(20);
+      color: fontColor(gray);
+      margin-top: $offset;
+      span {
+        margin-right: 58px;
+        i {
+          font-size: 1.5em;
+          vertical-align: middle;
+          color: color(orange);
+          margin-right: 9px;
+        }
+      }
+    }
+  }
+  .store {
+    background: #fff;
+    padding: $offset;
+    margin: $offset 0;
+    color: fontColor(gray);
+    font-size: fontSize(20);
+    &-name {
+      margin-bottom: $offset;
+      i {
+        font-size: 1.3em;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+    p {
+      line-height: 1.5;
+    }
+  }
+  .comment-wrap {
+    background: #fff;
+    padding: $offset;
+    h2 {
+      font-size: fontSize(24);
+      margin-bottom: $offset;
+      .comment-length {
+        font-size: fontSize(20);
+        color: fontColor(gray);
+        margin-left: 17px;
+      }
+    }
+    .comment-keys {
+      margin-top: $offset;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        margin-right: 30px;
+        margin-bottom: $offset;
+        font-size: fontSize(20);
+        color: fontColor(gray);
+        background-color: rgba(255, 88, 49, 0.22);
+        border-radius: 10px;
+        padding: 20px 22px;
+      }
+    }
+    .show-comment {
+      margin: $offset auto 0;
+      width: 148px;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      color: color(orange);
+      font-size: fontSize(20);
+      border-radius: 19px;
+      border: solid 2px #ff5831;
+    }
+  }
+  .product-pics {
+    padding: $offset;
+    background: #fff;
+    margin: $offset 0;
+    h2 {
+      font-size: fontSize(24);
+    }
+    .pic {
+      margin-top: $offset;
+      width: 100%;
+      min-height: 460px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    padding: $offset;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 88px;
+    border-top: 1px solid color(bc);
+    background-color: #ffffff;
+    .left {
+      display: flex;
+      li {
+        margin-right: 74px;
+      }
+      i {
+        font-size: 2em; // font-weight: bold;
+        color: fontColor(deepGray);
+      }
+    }
+  }
+  .buy-content {
+    .buy-info {
+      display: flex;
+      height: 148px;
+      .pic {
+        position: relative;
+        width: 148px;
+        height: 148px;
+        overflow: hidden;
+        img {
+          position: absolute;
+          &.w {
+            //如果宽度比高度大，就加这个class
+            height: 100%;
+            width: auto;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          &.h {
+            //如果宽度比高度大，就加这个class
+            height: auto;
+            width: 100%;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      .right {
+        flex: 1;
+        padding-left: $offset;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .top {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          h3 {
+            font-size: fontSize(26);
+          }
+          i {
+            color: fontColor(gray);
+          }
+        }
+        .price {
+          color: color(orange);
+          font-size: fontSize(20);
+        }
+        .down {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .count-control {
+            display: flex;
+            align-items: center;
+            .count{
+              padding: 0 42px;
+              color: fontColor(gray);
+            }
+            .cc {
+              width: 42px;
+              height: 42px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: color(orange);
+              color: #fff;
+              font-size: fontSize(26);
+              border-radius: 100%;
+              &.dis{
+                background-color: #e5e5e5;
+              }
+            }
+          }
+          p{
+            color: fontColor(gray);
+          }
+        }
+      }
+    }
+    .buy-footer{
+      .all-price{
+        font-size: fontSize(26);
+        line-height: 26px;
+        span{
+          vertical-align: middle;
+          color: color(orange);
+        }
+      }
+      margin-top: 174px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

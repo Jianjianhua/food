@@ -1,0 +1,85 @@
+@import "./_mixin.scss";
+.login{
+  .content{
+    margin: $offset 0;
+    .tips{
+      font-size: fontSize(20);
+      line-height: 1.5;
+      color: fontColor(gray);
+      padding: $offset;
+      a{
+        color: color(orange);
+      }
+    }
+  }
+  .login-btn{
+    text-align: center;
+  }
+  .other-type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 0 125px;
+    bottom: 74px;
+    left: 0;
+    h3{
+      position: relative;
+      color: fontColor(gray);
+      font-size: fontSize(20);
+      &::before,
+      &::after{
+        content: '';
+        background:#edebeb;
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        top: 50%;
+        // margin-top: -0.5px;
+      }
+      &::before{
+        left: -105%;
+      }
+      &::after{
+        right: -105%;
+      }
+    }
+    ul{
+      width: 100%;
+      margin-top: 74px;
+      display: flex;
+      justify-content: space-between;
+      li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &.wechat{
+          i{ background: #3ac344 }
+        }
+        &.qq{
+          i{ background: #37a7d0 }
+        }
+        &.weibo{
+          i{ background: #d03737; }
+        }
+        i{
+          width: 88px;
+          height: 88px;
+          // background: red;
+          text-align: center;
+          line-height: 88px;
+          color: #fff;
+          font-size: 2em;
+          border-radius: 100%;
+        }
+        span{
+          color: fontColor(gray);
+          font-size: fontSize(20);
+          margin-top: $offset;
+        }
+      }
+    }
+  }
+}

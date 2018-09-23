@@ -1,0 +1,39 @@
+@import './_mixin.scss';
+.user-center {
+  .user-info {
+    padding-top: 76px;
+    padding-bottom: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(to bottom, #f1bf5f, #e77b55);
+    .avatar{
+      width: 160px;
+      height: 160px;
+      background-color: #ffffff;
+      border: solid 4px #ffffff;
+      border-radius: 100%;
+      overflow: hidden;
+      margin-bottom: 54px;
+      img{
+        width: 100%;
+      }
+    }
+    .message{
+      position: absolute;
+      top: $offset;
+      right:$offset;
+      font-size: 2em;
+      color: #fff;
+    }
+    .detail{
+      h3{
+        font-size: fontSize(30);
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

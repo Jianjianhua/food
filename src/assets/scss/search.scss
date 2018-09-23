@@ -1,0 +1,39 @@
+@import "./_mixin.scss";
+.search{
+  &-bar{
+    .search-input{
+
+      width: 100%;
+      input{
+        padding: 12px 30px;
+        width: 100%;
+        background:color(bg);
+        border-radius: $radius;
+      }
+    }
+    .search-btn{
+      &:active{
+        color: color(orange);
+      }
+    }
+  }
+  .item{
+    background: #fff;
+    padding: $offset;
+    h3{
+      font-size: fontSize(24);
+    }
+    .list{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        padding: 6px 10px;
+        background-color: color(bg);
+        font-size: fontSize(20);
+        border-radius: $radius;
+        margin-right: 12px;
+        margin-top: $offset;
+      }
+    }
+  }
+}

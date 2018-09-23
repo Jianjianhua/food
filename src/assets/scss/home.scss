@@ -1,0 +1,143 @@
+@import './_mixin.scss';
+.home {
+  .header {
+    .top-left,
+    .scan {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      i {
+        font-size: 1.5em;
+      }
+      span {
+        margin-top: 5px;
+        font-size: fontSize(18);
+      }
+    }
+    .search {
+      width: 100%;
+      height: 46px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+      color: fontColor(deepGray);
+      border-radius: $radius;
+      i {
+        margin-right: 11px;
+      }
+      input {
+        flex: 1;
+        border: none;
+      }
+    }
+  }
+  .banner {
+    img {
+      width: 100%;
+    }
+  }
+  .main-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: $offset 0;
+    margin: $offset 0;
+    background: #fff;
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .pic {
+        width: 88px;
+        margin-bottom: 27px;
+        img {
+          width: 100%;
+        }
+      }
+      span {
+        font-size: fontSize(26);
+      }
+    }
+  }
+  .hd {
+    background: #fff;
+    padding: $offset;
+    .pic {
+      width: 100%;
+      border-radius: $radius;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      margin-bottom: $offset;
+      h3 {
+        font-size: fontSize(28);
+        margin-bottom: 13px;
+      }
+      p {
+        color: fontColor(gray);
+      }
+    }
+    .top {
+      display: flex;
+      justify-content: space-between;
+      &-item {
+        width: calc( (100% - 48px) /3);
+        @include nth(1) {
+          h3 {
+            color: color(orange);
+          }
+        }
+        @include nth(2) {
+          h3 {
+            color: color(blue);
+          }
+        }
+        @include nth(3) {
+          h3 {
+            color: color(yellow);
+          }
+        }
+      }
+    }
+    .bottom {
+      margin-top: $offset;
+      display: flex;
+      .time {
+        flex:calc( ( (100% - 48px) /3 ) * 2 );
+        padding-right: $offset;
+        h3 {
+          color: color(deepBlue);
+        }
+        .text{
+          margin-bottom: $offset - 10;
+        }
+        p {
+          display: flex;
+          align-items: center;
+          span {
+            padding: 5px;
+            border-radius: 4px;
+            color: #fff;
+            background: color(orange);
+            font-size: fontSize(18);
+            margin: 0 3px;
+          }
+        }
+      }
+      .sacl {
+        width:calc( (100% - 48px) /3);
+      }
+    }
+  }
+  .panel{
+    margin-top: $offset;
+    background: #fff;
+    h3{
+      font-size: fontSize(28);
+      padding: $offset;
+    }
+  }
+}

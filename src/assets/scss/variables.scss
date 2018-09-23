@@ -1,0 +1,71 @@
+$icomoon-font-path: "/fonts" !default;
+
+/* 颜色 */
+$color:(
+  orange:#ff5831, //主要颜色
+  bc:#eeeeee,// 边框颜色
+  bg:#dfdddd,
+  blue:#31c2ff,
+  yellow:#ff8d31,
+  deepBlue:#3175ff,
+);
+
+/* 字体颜色 */
+$fontColor:(
+  deepGray:#555555,
+  gray:#999999,
+  lightGray:#c3c3c3
+);
+
+/* 字体大小 */
+$fontSize:(
+  32:32px,
+  30:30px,
+  28:28px,
+  26:26px,
+  24:24px,
+  20:20px,
+  18:18px
+);
+
+/* 间距 */
+$offset:24px;
+
+$radius:10px;
+
+$icon-edit: \e900;
+$icon-pos: \e901;
+$icon-share: \e902;
+$icon-kefu: \e903;
+$icon-conph: \e904;
+$icon-del: \e905;
+$icon-collect: \e906;
+$icon-circle-check: \e907;
+$icon-info: \e908;
+$icon-setting: \e909;
+$icon-jf: \e90a;
+$icon-bad: \e90b;
+$icon-conph2: \e90c;
+$icon-msg: \e90d;
+$icon-order-sel: \e90e;
+$icon-order: \e90f;
+$icon-star: \e910;
+$icon-qz-sel: \e911;
+$icon-qz: \e912;
+$icon-scan: \e913;
+$icon-home-sel: \e914;
+$icon-home: \e915;
+$icon-search: \e916;
+$icon-user-sel: \e917;
+$icon-user: \e918;
+$icon-heart: \e919;
+$icon-menu: \e91a;
+$icon-eye: \e91b;
+$icon-wait-comment: \e91d;
+$icon-bicycle: \e91e;
+$icon-pos-sel: \e91f;
+$icon-back-money: \e920;
+$icon-back-money-success: \e921;
+$icon-angle-right: \e922;
+$icon-angle-left: \e924;
+

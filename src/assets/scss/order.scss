@@ -1,0 +1,60 @@
+@import "./_mixin.scss";
+.order{
+  .userinfo{
+    display: flex;
+    align-items: center;
+    height: 250px;  
+    padding: 0 $offset;
+    background-image: linear-gradient(to bottom,#f1bf5f,#e77b55);
+ 
+    .avatar{
+      width: 161px;
+      height: 161px;
+      border-radius: 100%;
+      background: red;
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
+    }
+    .detail{
+      width: calc( 100% - 161px - 24px );
+      padding-left: $offset;
+      h3{
+        color: #282828;
+        font-size: fontSize(30);
+      }
+      p{
+        margin: $offset 0;
+        font-size: fontSize(24);
+        color: #4c4b4b;
+        @include singleText();
+      }
+    }
+  }
+  .order-plane{
+    margin-bottom: $offset;
+  }
+  .my-order{
+    .list{
+      padding: $offset;
+      background: #fff;
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        i{
+          font-size: 3em;
+          color: color(orange);
+          margin-bottom: $offset;
+        }
+        span{
+          font-size: fontSize(24);
+        }
+      }
+    }
+  }
+}

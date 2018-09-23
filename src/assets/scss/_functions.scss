@@ -1,0 +1,16 @@
+@import "./variables.scss";
+
+/* 获取颜色对象的颜色 */
+@function color($key){
+  @return map-get($map: $color, $key:$key );
+}
+
+/* 获取字体大小对象的字体大小 */
+@function fontSize($key){
+  @return map-get($map: $fontSize, $key: $key);
+}
+
+/* 获取字体颜色对象的颜色 */
+@function fontColor($key){
+  @return map-get($map: $fontColor, $key: $key);
+}
